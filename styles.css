@@ -1,0 +1,256 @@
+*{
+	padding: 0;
+	margin:0;
+	font-family: Montserrat;
+}
+html , body{
+	width: 100%;
+	height: 100%;
+}
+:root{
+	--lila:#D8DCEC;
+	--azul:#B0BAD8;
+	--blanco:#ffff;
+}
+
+@font-face {
+    font-family: Galada;
+    src: url(fonts/Galada-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+/* ---------------------MODAL------------------- */
+#bg-negro {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    z-index: 999999999;
+    transition-timing-function: linear;
+    /*-webkit-transition: .1s all;*/
+    opacity: 0;
+    visibility: hidden;
+}
+
+#modal {
+    float: left;
+    position: fixed;
+    background: #fff;
+    z-index: 999999999999;
+    border-radius: 2px;
+    top: 50%;
+    margin-top: -100px;
+    box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, .5);
+    transition-timing-function: linear;
+    /*-webkit-transition: .2s all;*/
+    opacity: 0;
+    visibility: hidden;
+    /*transition-timing-function: linear;
+    -webkit-transform: scale(.9);*/
+    width: 200px;
+    left: 50%;
+    overflow: hidden;
+}
+
+#modal>h1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#modal>p {
+    color: #6f7a8c;
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#modalimg{
+	width: 50%;
+	height: 30%;
+}
+
+.cmodal{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.chico {
+    width: 300px !important;
+    margin-left: -150px;
+}
+
+.verModal {
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-transform: scale(1) !important;
+}
+
+.grande {
+    width: 600px !important;
+    margin-left: -300px;
+}
+
+.menta{
+	border: 2px solid transparent;
+    background: transparent;
+    font-color: red !important;
+    outline: none;
+    font-size: 1.3em;
+}
+
+/*--------------------Primera pagina-------------*/
+#bg{
+	padding: 0;
+	background: var(--lila);
+}
+.header{
+	padding: 0;
+	height: 80px;
+	position: fixed;
+	z-index: 9999;
+	float: left;
+	box-shadow: 3px 0px 7px 0px rgba(0,0,0,.5);
+	background: rgba(176,186,216,1);
+}
+.menu , .textM{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu img{
+	width: 105px;
+	height: 85px;
+}
+.textM a{
+	font-size: 1.3em;
+	color: rgba(0,0,0,.7);
+	text-decoration: none;
+}
+.textM a:hover{
+	color: var(--lila);
+}
+.logo{
+	padding: 0;
+	height: 550px;	
+	margin-top: 80px;
+	position: relative;
+	float: left;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.historia{
+	padding: 0;
+	height: 400px;
+	position: relative;
+	float: left;
+	
+}
+.historia h1{
+	width: 100%;
+	height: 30px;
+	font-family: Galada;
+}
+.hst{
+	height: 100%;
+	position: relative;
+	float: left;
+}
+.hsti{
+	height: 100%;
+	position: relative;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hsti img{
+	height: 85%;
+	position: relative;
+	float: left;
+}
+
+/* .ubica{
+	padding: 0;
+	height: 400px;
+	position: relative;
+	float: left;
+	margin-top: 50%;
+}
+ */
+#map{
+	height: 85%;
+}
+.footer{
+	height: 70px;
+	position: relative;
+	bottom: 0px;
+}
+
+footer ul{
+	list-style: none;
+}
+
+footer li{
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	/* line-height: 60px; */
+	margin-top: 2%;
+    font-size: 1em;
+}
+
+footer img{
+	width: 20px;
+	height: 20px;
+	margin-right: 3%;
+}
+/*-------segunda pagina-----*/
+.menut{
+	padding: 0;
+	height: 200px;
+	margin-top: 80px;
+	position: relative;
+	float: left;
+}
+
+.plt{
+	padding: 0;
+	margin-top: 10%;
+}
+
+.plts{
+	height: 20%;
+	position: relative;
+	float: left;
+}
+
+.img{
+	height: 85%;
+	position: relative;
+	float: left;
+}
+
+.img img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	float: left;
+}
