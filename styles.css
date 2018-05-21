@@ -21,6 +21,127 @@ html , body{
     font-family: Montserrat;
     src: url(fonts/Montserrat-Regular.ttf);
 }
+/*------------------------------------ VISUALIZACION PARA EL MEDIA QUERY ------------------------*/
+.nv{
+	display: none !important;
+}
+
+.ver{
+	display: block !important;
+}
+
+/*----------------------------- MEDIA QUERY ----------------------------------*/
+
+/*TABLETS*/
+@media only screen and (min-width: 768px) and (max-width: 940px){
+    .menu{
+    	display: none !important;
+    }
+    .menum{
+    	display: flex !important;
+		justify-content: center;
+		align-items: center;
+    }
+    .logo{
+    	height: 500px !important;
+    	-webkit-transition: width .25s linear;
+        transition: width .25s linear;
+    }
+    #logoimg{
+    	height: 500px !important;
+    	-webkit-transition: width .25s linear;
+        transition: width .25s linear;
+    }
+    .historia{
+    	height: 33% !important;
+    }
+    .ubica{
+    	height: 300px !important;
+    }
+    .footer{
+    	margin-top: 33% !important;
+    }
+    #map{
+    	margin-top:-6% !important;
+    }
+    .menut{
+    	height:35% !important;
+    }
+}
+
+/*SMARTPHONE*/
+@media only screen and (min-width: 400px) and (max-width: 767px){
+    .menu{
+    	display: none !important;
+    }
+    .menum{
+    	display: flex !important;
+		justify-content: center;
+		align-items: center;
+    }
+    .logo{
+    	height: 375px !important;
+    	-webkit-transition: width .25s linear, background .25s linear;
+        transition: width .25s linear, background .25s linear;
+    }
+    #logoimg{
+    	height: 375px !important;
+    	-webkit-transition: width .25s linear;
+        transition: width .25s linear;
+    }
+    .historia{
+    	height: 33% !important;
+    }
+    .ubica{
+    	height: 300px !important;
+    }
+    .footer{
+    	margin-top: 33% !important;
+    }
+    #map{
+    	margin-top:-6% !important;
+    }
+    .menut{
+    	height:35% !important;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 399px){
+    .menu{
+    	display: none !important;
+    }
+    .menum{
+    	display: flex !important;
+		justify-content: center;
+		align-items: center;
+    }
+     .logo{
+    	height: 375px !important;
+    	-webkit-transition: width .25s linear, background .25s linear;
+        transition: width .25s linear, background .25s linear;
+    }
+    #logoimg{
+    	height: 375px !important;
+    	-webkit-transition: width .25s linear;
+        transition: width .25s linear;
+    }
+    .historia{
+    	height: 33% !important;
+    }
+    .ubica{
+    	height: 300px !important;
+    }
+    .footer{
+    	margin-top: 33% !important;
+    }
+    #map{
+    	margin-top:-6% !important;
+    }
+    .menut{
+    	height:35% !important;
+    }
+}
+
 /* ---------------------MODAL------------------- */
 #bg-negro {
     width: 100%;
@@ -123,6 +244,17 @@ html , body{
 	box-shadow: 3px 0px 7px 0px rgba(0,0,0,.5);
 	background: rgba(176,186,216,1);
 }
+.menum , .textM{
+	height: 100%;
+	display: none;
+}
+.menum img{
+	width: 105px;
+	height: 85px;
+}
+
+/* MENU PARA LO QUE ES MAS GRANDE QUE UN MOVIL */
+
 .menu , .textM{
 	height: 100%;
 	display: flex;
@@ -133,6 +265,17 @@ html , body{
 	width: 105px;
 	height: 85px;
 }
+
+#bimg{
+	width: 60px;
+	height: 60px;
+}
+
+#mimg{
+	width: 35px;
+	height: 35px;
+}
+
 .textM a{
 	font-size: 1.3em;
 	color: rgba(0,0,0,.7);
@@ -161,7 +304,7 @@ html , body{
 }
 .historia{
 	padding: 0;
-	height: 400px;
+	height: 450px;
 	position: relative;
 	float: left;
 	
@@ -191,16 +334,24 @@ html , body{
 	float: left;
 }
 
-/* .ubica{
+.ubica{
 	padding: 0;
-	height: 400px;
+	height: 500px;
 	position: relative;
 	float: left;
-	margin-top: 50%;
+	
 }
- */
+.ubica h1{
+	width: 100%;
+	height: 30px;
+	font-family: Galada;
+}
 #map{
 	height: 85%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:-15%;
 }
 .footer{
 	height: 70px;

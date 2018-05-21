@@ -16,12 +16,20 @@
 		<header class="header col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 			<div class="menu col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
 			<div class="menu col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-				<a href="inicio.php"><img src="images/logoi.png"></a>
+				<a href="index.php"><img src="images/logoi.png"></a>
 			</div>
 			<div class="menu col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
 				<div class="textM col-md-4"><a href="#us"> Nosotros </a></div>
 				<div class="textM col-md-4"><a href="menu.php">Menú </a> </div>
 				<div class="textM col-md-4"><a href="#here"> Ubicación </a> </div>
+			</div>
+
+			<div class="menum col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+				<a href="index.php"><img id="bimg" src="images/logoi.png"></a>
+			</div>
+			<div class="menum col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
+			<div class="menum col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+				<img id="mimg" src="images/icon/menu.png">
 			</div>
 		</header>
 		
@@ -85,15 +93,15 @@
 
         <!--EL MAPA-->
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-offset-12"><h1 id="here"></h1></div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-offset-12"><h1 id="here"></h1></div>
+
 		<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1"></div>		
-		<div class="historia col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+		<div class="ubica col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
 			<h1>Ubicación</h1>
-			<div class="hst col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+			<div class="hts col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
 			</div>
 			<div class="hsti col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-				<div class="hst col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="map"> </div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="map"> </div>
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1"></div>
