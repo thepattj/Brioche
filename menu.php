@@ -15,6 +15,8 @@
 		<div id="bg-negro" onclick="cerrar()"></div>
 		<div id="modal"></div>
 		<header class="header col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+		
+		    <!--HEADER CUANDO EL TAMANO DE LA PAGINA ES MAYOR A 1024-->
 			<div class="menu col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
 			<div class="menu col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
 				<a href="index.php"><img src="images/logoi.png"></a>
@@ -24,12 +26,20 @@
 				<div class="textM col-md-4"><a href="menu.php">Menú </a> </div>
 				<div class="textM col-md-4"><a href="#here"> Ubicación </a> </div>
 			</div>
-
+            <!--HEADER CUANDO EL TAMANO DE LA PAGINA ESTA ENTRE 768 A 1024-->
 			<div class="menum col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
 				<a href="index.php"><img id="bimg" src="images/logoi.png"></a>
 			</div>
 			<div class="menum col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
 			<div class="menum col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+				<img id="mimg" src="images/icon/menu.png">
+			</div>
+			
+			<!--HEADER CUANDO EL TAMANO DE LA PAGINA ESTA ENTRE 0 A 767-->
+			<div class="menus col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+				<a href="index.php"><img id="bimg" src="images/logoi.png"></a>
+			</div>
+			<div class="menus col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
 				<img id="mimg" src="images/icon/menu.png">
 			</div>
 		</header>

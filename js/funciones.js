@@ -18,7 +18,6 @@ function pmodal(id) {// Datos para que el modal se cree
 	}
 }
 
-
 function verModal(tipo, texto, textoBtn, parrafo) { //MODAL DE ALERTA
     bgNegro = document.getElementById('bg-negro');
     modal = document.getElementById('modal');
@@ -42,6 +41,61 @@ function verModal(tipo, texto, textoBtn, parrafo) { //MODAL DE ALERTA
     tipo = tipo;
 }
 
+function menus(tipom){
+    if(tipom == 'menu'){
+        menuhamb('chicom', 'Nosotros', 'Menu', 'Ubicacion');
+    }if(tipom == "menun"){
+        menunos('chicom');    
+    }
+    /*cerrarm();*/
+}
+function menuhamb(tipo, opc1, opc2, opc3){
+    bgBlanco = document.getElementById('bg-blanco');
+    modalm = document.getElementById('menuh');
+
+    bgBlanco.classList.add('vermenuh');
+    modalm.classList.add('vermenuh');
+
+    if (tipo == 'chicom') {
+        parrafo = ""
+    } else {
+        parrafo = parrafo;
+    }
+
+    modalm.innerHTML =  
+        "<div class='cmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' onclick='cerrarm()'><a href='#us'>  <h4>" + opc1 + "</h4> </a></div> "+
+        "<div class='cmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' onclick='cerrarm()'><a href='menu.php'> <h4>" + opc2 + "</h4> </a> </div> "+
+        "<div class='cmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' onclick='cerrarm()'><a href='#here'> <h4>" + opc3 + "</h4> </a> </div> ";
+
+    modalm.classList.add(tipo);
+
+    tipo = tipo;
+}
+
+function menunos(tipo){
+    bgBlanco = document.getElementById('bg-blanco');
+    modalm = document.getElementById('menugpo');
+
+    bgBlanco.classList.add('vermenugpo');
+    modalm.classList.add('vermenugpo');
+
+    if (tipo == 'chicom') {
+        parrafo = ""
+    } else {
+        parrafo = parrafo;
+    }
+
+    modalm.innerHTML =  
+        "<div class='cmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' onclick='cerrarm()'><a href='#us'>The bakery </a></div> "+
+        "<div class='cmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' onclick='cerrarm()'><a href='menu.php'>Moo House</a> </div> "+
+        "<div class='cmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' onclick='cerrarm()'><a href='#here'>Oink House</a> </div> "+
+        "<div class='cmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' onclick='cerrarm()'><a href='#here'>Brioche Brasserie</a> </div> ";
+
+    modalm.classList.add(tipo);
+
+    tipo = tipo; 
+}
+
 function cerrar() { //BOTON QUE SE CREA
     bgNegro.classList.remove('verModal');
     modal.classList.remove('verModal');
@@ -50,5 +104,16 @@ function cerrar() { //BOTON QUE SE CREA
         modal.classList.remove('chico');
     } else {
         modal.classList.remove('grande');
+    }
+}
+
+function cerrarm() { //BOTON QUE SE CREA
+    bgBlanco.classList.remove('vermenuh');
+    modalm.classList.remove('vermenuh');
+
+    if (modalm.classList.contains('chico')) {
+        modalm.classList.remove('chico');
+    } else {
+        modalm.classList.remove('grande');
     }
 }

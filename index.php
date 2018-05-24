@@ -10,10 +10,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASQKvbTGUZ1Ds6TTJJXJAuicT0ejXwNpw"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
 </head>
 <body>
 	<div class="container-fluid" id="bg">
+	    <div id="bg-blanco" onclick="cerrarm()"></div>
+	    <div id="menuh"></div>
+	    <div id="menugpo"></div>
 		<header class="header col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+		
+		    <!--HEADER CUANDO EL TAMANO DE LA PAGINA ES MAYOR A 1024-->
 			<div class="menu col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
 			<div class="menu col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
 				<a href="index.php"><img src="images/logoi.png"></a>
@@ -23,18 +29,26 @@
 				<div class="textM col-md-4"><a href="menu.php">Menú </a> </div>
 				<div class="textM col-md-4"><a href="#here"> Ubicación </a> </div>
 			</div>
-
+            <!--HEADER CUANDO EL TAMANO DE LA PAGINA ESTA ENTRE 768 A 1024-->
 			<div class="menum col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
 				<a href="index.php"><img id="bimg" src="images/logoi.png"></a>
 			</div>
 			<div class="menum col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
 			<div class="menum col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-				<img id="mimg" src="images/icon/menu.png">
+				<img onclick="menus('menu')" id="mimg" src="images/icon/menu.png">
+			</div>
+			
+			<!--HEADER CUANDO EL TAMANO DE LA PAGINA ESTA ENTRE 0 A 767-->
+			<div class="menus col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+				<a href="index.php"><img id="bimg" src="images/logoi.png"></a>
+			</div>
+			<div class="menus col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+				<img onclick="menus('menu')" id="mimg" src="images/icon/menu.png">
 			</div>
 		</header>
 		
 		<!--EL CARRUSEL DE IMAGENES-->
-		<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1"></div>
+		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
 		<div class="logo col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
 			<div id="my-slider" class="carousel slide" data-ride="carousel">
 			    <!--indicators dot nov-->
@@ -43,13 +57,14 @@
 			        <div class="item active">
 			            <img src="images/inicio0.jpg" alt="inicio1" id="logoimg">
 			            <div class="carousel-caption">
-			                <h1>Un lugar con gran prestigio</h1>
+			                <h1>Alimentos de </h1>
 			            </div>
 			        </div>
 			        <div class="item">
 			            <img src="images/inicio2.jpg" alt="inicio2" id="logoimg">
 			            <div class="carousel-caption">
-			                <h1>Nuestro servicio, te hara sentir en casa</h1>
+			                <h1>Nuestro servicio</h1>
+			                <h3>Te hara sentir en casa.</h3>
 			            </div>
 			        </div>
 			        <div class="item">
@@ -61,7 +76,8 @@
 			         <div class="item">
 			            <img src="images/inicio4.jpg" alt="inicio4" id="logoimg">
 			            <div class="carousel-caption">
-			                <h1>Visitanos, te enamoraras de nosotros</h1>
+			                <h1>Visitanos</h1>
+			                <h3>Te enamoraras de nosotros.</h3>
 			            </div>
 			        </div>
 			    </div>
@@ -76,7 +92,8 @@
 			    </a>
 			</div>
 		</div>
-		<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1"></div>
+		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+		
 		<!--LA HISTORIA-->
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"><h1 id="us"></h1></div>
 		<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1"></div>		
@@ -111,11 +128,17 @@
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-offset-12"><h1 id="here"></h1></div>
 		<footer class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 			<ul>
-				<a href="https://www.facebook.com/briochemx/"> <li><img src="images/icon/facebook.png">Facebook</li> </a>				
-				<li><img src="images/icon/instagram.png">Instagram</li>
-				<li><img src="images/icon/youtube.png">Youtube</li>
-				<li><img src="images/icon/trabajo.png">Bolsa de Trabajo</li>
-				<li><img src="images/icon/gpo.png">Grupo</li>
+				<a href="https://www.facebook.com/briochemx/" target="_blank"> <li id="footerw"><img src="images/icon/facebook.png">Facebook</li> </a>		
+				<li id="footerw"><img src="images/icon/instagram.png">Instagram</li>
+				<li id="footerw"><img src="images/icon/youtube.png">Youtube</li>
+				<li id="footerw"><img src="images/icon/trabajo.png">Bolsa de Trabajo</li>
+				<li id="footerw"><img onclick="menus('menun')" src="images/icon/gpo.png">Grupo</li>
+				
+				<a href="https://www.facebook.com/briochemx/" target="_blank"> <li id="footers"><img src="images/icon/facebook.png"></li> </a>				
+				<li id="footers"><img src="images/icon/instagram.png"></li>
+				<li id="footers"><img src="images/icon/youtube.png"></li>
+				<li id="footers"><img src="images/icon/trabajo.png"></li>
+				<li id="footers"><img onclick="menus('menun')" src="images/icon/gpo.png"></li>
 			</ul>
 		</footer>
 	</div>
